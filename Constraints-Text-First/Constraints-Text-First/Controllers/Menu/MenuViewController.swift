@@ -1,14 +1,14 @@
 //
-//  UserChatViewController.swift
+//  MenuViewController.swift
 //  Constraints-Text-First
 //
-//  Created by Famil Mustafayev on 2.02.2021.
+//  Created by Famil Mustafayev on 3.02.2021.
 //  Copyright © 2021 Famil Mustafayev. All rights reserved.
 //
 
 import UIKit
 
-class UserChatViewController: UIViewController {
+class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +26,11 @@ class UserChatViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    @IBAction func dismissButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func dismissButtonMenu(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }

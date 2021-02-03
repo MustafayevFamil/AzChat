@@ -187,9 +187,56 @@
             <point key="canvasLocation" x="4943" y="127"/>
         </scene>
         <!--AzChat-->
+        <scene sceneID="kIi-VS-6cg">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="xTN-k3-qPa" customClass="MenuViewController" customModule="Constraints_Text_First" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lts-bi-nSW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btA-KK-16U">
+                                <rect key="frame" x="142" y="428" width="130" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Click dismiss">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButton:" destination="xTN-k3-qPa" eventType="touchUpInside" id="uWq-If-RLO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="btA-KK-16U" firstAttribute="centerX" secondItem="lts-bi-nSW" secondAttribute="centerX" id="ITo-wV-r6D"/>
+                            <constraint firstItem="btA-KK-16U" firstAttribute="centerY" secondItem="lts-bi-nSW" secondAttribute="centerY" id="lYP-nD-diY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qGJ-Gc-QFn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AzChat" id="MgH-vK-ED3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="bgu-Gl-4zu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yzd-Wk-g6j">
+                                <rect key="frame" x="20" y="7" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="icons8-menu-90">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonMenu:" destination="xTN-k3-qPa" eventType="touchUpInside" id="c3b-RL-yXt"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyJ-vS-mS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6802.898550724638" y="-1203.3482142857142"/>
+        </scene>
+        <!--AzChat-->
         <scene sceneID="3Ne-C4-NvH">
             <objects>
-                <viewController id="cAg-AV-Tn4" customClass="AzChatViewController" customModule="Constraints_Text_First" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AzChatViewController" id="cAg-AV-Tn4" customClass="AzChatViewController" customModule="Constraints_Text_First" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zby-CH-Y9A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,7 +324,16 @@
                         <viewLayoutGuide key="safeArea" id="Svp-A1-qK8"/>
                     </view>
                     <navigationItem key="navigationItem" title="AzChat" id="Ql1-qi-Tjm">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-90" id="e8b-jt-e0r">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-90" style="plain" id="smg-sD-mN7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feh-FO-mWA">
+                                <rect key="frame" x="20" y="7" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="icons8-menu-90"/>
+                                <connections>
+                                    <action selector="openMenuButton:" destination="cAg-AV-Tn4" eventType="touchUpInside" id="xcL-hX-M8A"/>
+                                </connections>
+                            </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <rightBarButtonItems>
@@ -290,6 +346,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuButton" destination="feh-FO-mWA" id="lvI-i7-ejP"/>
                         <outlet property="tableView" destination="n0N-1n-eZu" id="rOi-jx-gQ9"/>
                         <segue destination="qXK-Uu-LhS" kind="show" identifier="segue" id="8mP-XL-jvK"/>
                     </connections>
@@ -610,6 +667,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chk-sd-teA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4945" y="-510"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Un8-GU-FbL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zai-hS-r85" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="zH2-ph-Us1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xTN-k3-qPa" kind="relationship" relationship="rootViewController" id="zac-CO-a9L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IoI-QW-JiD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5930" y="-1203"/>
         </scene>
     </scenes>
     <resources>

@@ -17,12 +17,14 @@
 		C72188BB25C96C0D00BF1D0B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72188BA25C96C0D00BF1D0B /* SignInViewController.swift */; };
 		C72188BF25C9730000BF1D0B /* SignIn + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72188BE25C9730000BF1D0B /* SignIn + Extension.swift */; };
 		C72188C125C9735000BF1D0B /* SignUp + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72188C025C9735000BF1D0B /* SignUp + Extension.swift */; };
+		C7357C8025CA903400D57DD1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7357C7F25CA903400D57DD1 /* MenuViewController.swift */; };
+		C7357C8225CA913300D57DD1 /* GuillotineMenuTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7357C8125CA913200D57DD1 /* GuillotineMenuTransitionAnimation.swift */; };
+		C7357C8925CA9AD500D57DD1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7357C8825CA9AD500D57DD1 /* Button.swift */; };
 		C7760DCD25C2A8560076A983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7760DCC25C2A8560076A983 /* AppDelegate.swift */; };
 		C7760DD225C2A8560076A983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7760DD025C2A8560076A983 /* Main.storyboard */; };
 		C7760DD425C2A8580076A983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7760DD325C2A8580076A983 /* Assets.xcassets */; };
 		C7760DD725C2A8580076A983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7760DD525C2A8580076A983 /* LaunchScreen.storyboard */; };
 		C799192525C33EDD00882075 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C799192425C33EDD00882075 /* TextField.swift */; };
-		C799192725C3449200882075 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C799192625C3449200882075 /* Button.swift */; };
 		C799192925C357B600882075 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C799192825C357B600882075 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,9 @@
 		C72188BA25C96C0D00BF1D0B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C72188BE25C9730000BF1D0B /* SignIn + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignIn + Extension.swift"; sourceTree = "<group>"; };
 		C72188C025C9735000BF1D0B /* SignUp + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUp + Extension.swift"; sourceTree = "<group>"; };
+		C7357C7F25CA903400D57DD1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C7357C8125CA913200D57DD1 /* GuillotineMenuTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuillotineMenuTransitionAnimation.swift; sourceTree = "<group>"; };
+		C7357C8825CA9AD500D57DD1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C7760DC925C2A8560076A983 /* Constraints-Text-First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Constraints-Text-First.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7760DCC25C2A8560076A983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7760DD125C2A8560076A983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +49,6 @@
 		C7760DD625C2A8580076A983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7760DD825C2A8580076A983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C799192425C33EDD00882075 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		C799192625C3449200882075 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C799192825C357B600882075 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,7 @@
 			children = (
 				C72188BA25C96C0D00BF1D0B /* SignInViewController.swift */,
 				C799192825C357B600882075 /* SignUpViewController.swift */,
+				C7357C8525CA997500D57DD1 /* SignIn + Extension */,
 			);
 			path = "Registered Controllers";
 			sourceTree = "<group>";
@@ -107,10 +112,10 @@
 		C72188BC25C972C000BF1D0B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7140DD325C9B7660076DCFE /* User Chat */,
 				C7140DCB25C9A1AC0076DCFE /* Registered Controllers */,
-				C72188BD25C972E200BF1D0B /* Extension */,
 				C7140DCE25C9A1EB0076DCFE /* AzChat */,
+				C7140DD325C9B7660076DCFE /* User Chat */,
+				C7357C8425CA98FF00D57DD1 /* Menu */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,8 +123,6 @@
 		C72188BD25C972E200BF1D0B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C72188BE25C9730000BF1D0B /* SignIn + Extension.swift */,
-				C72188C025C9735000BF1D0B /* SignUp + Extension.swift */,
 				C72188C225C9753100BF1D0B /* TextField + Extension */,
 				C72188C325C9754D00BF1D0B /* Button + Extension */,
 			);
@@ -138,10 +141,28 @@
 		C72188C325C9754D00BF1D0B /* Button + Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C799192625C3449200882075 /* Button.swift */,
+				C7357C8825CA9AD500D57DD1 /* Button.swift */,
 			);
 			name = "Button + Extension";
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		C7357C8425CA98FF00D57DD1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C7357C8125CA913200D57DD1 /* GuillotineMenuTransitionAnimation.swift */,
+				C7357C7F25CA903400D57DD1 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C7357C8525CA997500D57DD1 /* SignIn + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C72188BE25C9730000BF1D0B /* SignIn + Extension.swift */,
+				C72188C025C9735000BF1D0B /* SignUp + Extension.swift */,
+			);
+			path = "SignIn + Extension";
 			sourceTree = "<group>";
 		};
 		C7760DC025C2A8560076A983 = {
@@ -167,6 +188,7 @@
 				C7760DD025C2A8560076A983 /* Main.storyboard */,
 				C72188BC25C972C000BF1D0B /* Controllers */,
 				C7760DD325C2A8580076A983 /* Assets.xcassets */,
+				C72188BD25C972E200BF1D0B /* Extension */,
 				C7760DD525C2A8580076A983 /* LaunchScreen.storyboard */,
 				C7760DD825C2A8580076A983 /* Info.plist */,
 			);
@@ -245,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7140DD025C9A25A0076DCFE /* AzChatTableViewCell.swift in Sources */,
+				C7357C8025CA903400D57DD1 /* MenuViewController.swift in Sources */,
 				C7140DD525C9B7860076DCFE /* UserChatViewController.swift in Sources */,
+				C7357C8925CA9AD500D57DD1 /* Button.swift in Sources */,
 				C72188BB25C96C0D00BF1D0B /* SignInViewController.swift in Sources */,
 				C7140DD925C9B7B40076DCFE /* UserChatViewController + Extension.swift in Sources */,
 				C799192525C33EDD00882075 /* TextField.swift in Sources */,
@@ -256,7 +280,7 @@
 				C7140DD225C9A3E90076DCFE /* AzChatViewController + Extension.swift in Sources */,
 				C7140DD725C9B79E0076DCFE /* UserChatTableViewCell.swift in Sources */,
 				C72188B825C9452300BF1D0B /* DTTextField.swift in Sources */,
-				C799192725C3449200882075 /* Button.swift in Sources */,
+				C7357C8225CA913300D57DD1 /* GuillotineMenuTransitionAnimation.swift in Sources */,
 				C799192925C357B600882075 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
